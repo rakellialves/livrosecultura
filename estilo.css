@@ -1,0 +1,517 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Roboto Serif", serif;
+}
+#limitelogo{
+    max-width:330px;
+    height:320px;
+}
+#limitelogo img{
+    height: 280px;
+    width: 280px;
+}
+.limite{
+    max-width:1280px;
+    margin:0 auto;
+}
+#topo{
+    background-color:rgba(175, 212, 231, 0.4);
+    max-width: 1950px;
+    height:380px;
+    background-image:url("imagens/foto_capa_site.jpg");
+    background-position:right;                                    
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.menu menu{
+    max-width:100%;
+    height: 40px;
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+    margin:0 auto;
+    padding-top: 5px;
+}
+.botaomenu{
+    width:100px;
+    height: 30px;
+    background-color:rgba(9, 34, 138, 1);
+    border-radius: 8px;
+    border:1px 1px black solid;
+}
+.botaomenu a{
+    color:white;
+    text-shadow: 1px 2px black;
+    font-size: 15px;
+    font-family:"League Spartan", sans-serif;
+}
+.botaomenu:hover{
+    background-color: #493D17;
+}
+.pergunta{
+    background-color: #d9d9d9;
+    color:rgba(9, 34, 138, 1);
+    background-image: url("imagens/lupa.png");
+    background-size:25px;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 1px 1px black ;
+    width: 245px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.pergunta:hover{
+    background-color: #808E95;
+    color: white;
+}
+li a{
+    color:black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.pular{
+    width:100%;
+    height: 7px;
+    background-color: rgba(49, 95, 121, 0.71);
+}
+.banner{
+    max-width:100%;
+    height: 340PX;
+    background-color:rgba(49, 97, 121, 0.33);
+    display: flex;
+    justify-content: center;
+    background-image: url("imagens/livros2.gif"), url("imagens/livros1.webp");
+    background-repeat:no-repeat;
+    background-size: 220px, 150px;
+    background-position:  right bottom, left bottom;   
+}
+ #bannerh1{
+    text-align: center;
+    margin: auto;
+    color: rgba(9, 34, 138, 1);
+    text-shadow:2px 1px black ;
+    font-size: 70px;
+    font-weight:700;
+}
+.books{
+    max-width: 100%;
+    height: 950px;
+    background-color: rgba(49, 95, 121, 0.71);
+}
+#novidades{
+    color:black;
+    font-size:50px;
+    padding-top: 50px;
+    text-shadow: 3px 1px rgba(0, 0, 0, 0.2);
+    font-weight:900;
+    text-align: center;
+}
+.livro-grid{
+    width: 100%;
+    height: 770px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 60px;
+}
+.livro-card{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    background-image: url("imagens/favoritos.png");
+    background-position: top right 10px;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    padding: 10px;
+}
+.livro-card img{
+    width:250px;
+    height: 250px;
+    display: flex;
+    margin:auto;
+    padding: 20px;
+}
+.livro-card h2{
+    padding-top:30px;
+}
+.livro-card button{
+    box-shadow: 3px 3px #808E95;
+}
+.preco{
+    color:rgba(62, 50, 11, 1);
+    font-weight: 800;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+.sacola{
+    width: 180px;
+    height: 60px;
+    background-color:rgba(13, 136, 197, 0.8);
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+    border-radius:20px ;
+    border:0;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+.sacola:hover{
+    background-color:#493D17;
+}
+#vendidostext{
+    color: black;
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.principais{
+    background-color: rgba(104, 130, 143, 0.8);
+    height: 700px;
+    max-width: 100%;
+    padding-top: 30px;
+}
+.item{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+           grid-template-rows:1fr, 1fr;
+    gap:10px;
+    align-items: center;
+    justify-items: center;
+}
+.itens{
+    padding-bottom: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 32px;
+}
+.itens img{
+    height: 150px;
+    width: 150px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+.itens p{
+    text-align: center;
+    color:rgba(83, 67, 15, 1);
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.localizacao{
+    padding: 10px;
+    background-color:rgba(49, 95, 121, 0.8);
+    color:white;
+}
+#localizar{
+    color: black;
+    font-size: 48px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-shadow:2px 1px black;
+    text-align: center; 
+}
+.localizacao-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+.local {
+    gap:20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.local1{
+    display: flex;
+    align-items:center;
+}
+.local p{
+    width: 180px;
+    margin: 0;
+    text-align:left;
+    font-size: 15px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.2);    
+}
+#endereco{
+    width: 180px;
+    text-align:left;
+    font-size: 15px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.2);  
+}
+.local img {
+    max-width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.ponto{
+    display: flex;
+    gap:5px;
+    margin: 10px auto;
+    align-items: center;
+}
+.ponto img{
+    width: 30px;
+    height: 30px;
+}
+#informacoes{
+    width: auto;
+    height: 650px;
+    background: linear-gradient(to right, rgba(128, 142, 149, 0.8) 50%, rgba(106, 134, 147, 0.9333) 50%);
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.esquerda, .direita {
+    flex: 1;
+    padding: 20px;
+}
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "League Spartan", sans-serif;
+}
+.info{
+    max-width: 450px;
+}
+.info h2{
+    color:rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px black;
+    padding-top: 70px;
+    font-size: 34px;
+    text-align:center;
+    padding-left: 20px;
+}
+.info p{
+    padding-top: 150px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 24px;
+    color: black;
+}
+.direita{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.appfotos{
+    display: flex;
+    gap:25px
+}
+.direita h3{
+    padding-top: 80px;
+    padding-bottom: 200px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-size:30px;
+}
+.direita img{
+    width: 180px;
+    height: 60px;
+}
+.imagemdeco {
+    max-width: 480px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+.imagemdeco img{
+    height: 150px;
+    width: 150px;
+}
+#compre{
+    width: 300px;
+    height: 60px;
+    background-color: rgba(9, 34, 138, 1);
+    color:rgba(232, 232, 232, 1);
+    font-family:"League Spartan", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px black;
+}
+#compre:hover{
+    background-color:#316179;
+}
+.saibamais{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:rgba(49, 95, 121, 0.8);
+}
+#texto h1{
+    color:rgba(12, 18, 128, 1);
+    font-size:34px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px black;
+    padding-left: 70px;
+}
+#textobv{
+    width: 450px;
+    color:white;
+    font-size: 23px;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+    text-align:start;
+    padding-left:70px;
+    font-family: "League Spartan", sans-serif;
+}
+#alinhar {
+    display: flex;
+    align-items:flex-end;
+    margin-bottom:50px;
+    margin-right: 40px;
+}
+#sabermais{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(28, 28, 115, 1);
+    color: white;
+    font-family:"League Spartan", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#sabermais:hover{
+    background-color:#53430F;
+}
+.lendo{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: end;
+    padding-right: 70px;
+}
+.lendo img{
+    width: 300px;
+    padding-top: 50px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.lendo p{
+    color:rgba(73, 61, 23, 1);
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#rodape{
+    background-color:#316179;
+    color: white;
+    max-width: 100%;
+    height: 500px;
+    padding:20px 0;
+    font-family:"League Spartan", sans-serif;
+}
+#rodape h5{
+    padding-top: 80px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:nowrap;
+    max-width: 100%;
+}
+.secaoesquerda{
+    text-align:center;
+    padding:10px;
+}
+#h5diferente{
+    padding-left: 40px;
+}
+.pagamentoformas{
+    padding-left: 40px;
+    padding-bottom: 80px;
+}
+.pagamentoformas, .iconesredes{
+    display: flex;
+    gap: 4px;
+}
+.pagamentoformas img{
+    width: 50px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.iconesredes{
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.iconesredes img{
+    width: 40px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.logocentro{
+    margin:auto;
+    text-align: center;
+}
+.logo2{
+    width: 300px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.copy{
+    color:black;
+    font-weight: 800;
+    font-size: 22px;
+}
+.secaodireita{
+    text-align: center;
+    padding: 10px;
+    padding-right: 30px;
+}
+.secaodireita p{
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+    display: flex;
+    gap:10px;
+    margin: 30px auto;
+    align-items: center;
+}
+.secaodireita a{
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    color: white;
+}
+.contatoicon{
+    width: 40px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.contawhats{
+    width: 35px;
+}
